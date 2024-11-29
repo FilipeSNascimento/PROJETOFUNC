@@ -26,5 +26,5 @@ void salvar_dados(Funcionario funcionarios[], int tamanho);
 int carregar_dados(Funcionario funcionarios[]);
 int gerar_proximo_id(Funcionario funcionarios[], int tamanho);
 void to_uppercase(char *str);
-
+void promover_funcionario(const char *setor);
 #endif

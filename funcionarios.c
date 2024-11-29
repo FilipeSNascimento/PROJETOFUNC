@@ -66,32 +66,35 @@ void menu_principal(const char *setor_gerente) {
         printf("2. Editar Funcionario\n");
         printf("3. Pesquisar Funcionario\n");
         printf("4. Demitir Funcionario\n");
-        printf("5. Sair\n");
+        printf("5. Promover Funcionario\n");
+        printf("6. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
                 cadastrar_funcionario(setor_gerente);
-                break;
+            break;
             case 2:
                 editar_funcionario(setor_gerente);
-                break;
+            break;
             case 3:
                 pesquisar_funcionario();
-                break;
+            break;
             case 4:
                 demitir_funcionario(setor_gerente);
-                break;
+            break;
             case 5:
+                promover_funcionario(setor_gerente);
+            break;
+            case 6:
                 printf("Saindo...\n");
-                break;
+            break;
             default:
                 printf("Opcao invalida! Tente novamente.\n");
         }
-    } while (opcao != 5);
+    } while (opcao != 6);
 }
-
 // Função cadastrar novo funcionário
 void cadastrar_funcionario(const char *setor) {
     Funcionario funcionarios[MAX_FUNCIONARIOS];
@@ -416,6 +419,39 @@ void demitir_funcionario(const char *setor) {
             } else {
                 printf("Operacao cancelada.\n");
             }
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        printf("Funcionario nao encontrado ou fora do setor permitido.\n");
+    }
+}
+void promover_funcionario(const char *setor) {
+    Funcionario funcionarios[MAX_FUNCIONARIOS];
+    int tamanho = carregar_dados(funcionarios);
+    int id, encontrado = 0;
+
+    printf("Digite o ID do funcionario a ser promovido: ");
+    scanf("%d", &id);
+
+    for (int i = 0; i < tamanho; i++) {
+        if (funcionarios[i].id == id && strcmp(funcionarios[i].setor, setor) == 0) {
+            encontrado = 1;
+            printf("\nFuncionario encontrado: %s\n", funcionarios[i].nome);
+
+            // Alterar função
+            printf("Digite a nova funcao: ");
+            scanf(" %[^\n]s", funcionarios[i].funcao);
+            to_uppercase(funcionarios[i].funcao);
+
+            // Alterar salário
+            printf("Digite o novo salario: ");
+            scanf("%f", &funcionarios[i].salario);
+
+            salvar_dados(funcionarios, tamanho);
+            printf("Funcionario promovido com sucesso!\n");
+            printf("Novo cargo: %s, Novo salario: %.2f\n", funcionarios[i].funcao, funcionarios[i].salario);
             break;
         }
     }
