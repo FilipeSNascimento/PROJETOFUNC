@@ -1,0 +1,3 @@
+C:/Users/gv004/OneDrive/Desktop/Fatec/2ºSemestre/Projeto sabado/Projeto Controle de Funcionario/cmake-build-debug/CMakeFiles/ProjetoAnaMaromoa.dir
+C:/Users/gv004/OneDrive/Desktop/Fatec/2ºSemestre/Projeto sabado/Projeto Controle de Funcionario/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gv004/OneDrive/Desktop/Fatec/2ºSemestre/Projeto sabado/Projeto Controle de Funcionario/cmake-build-debug/CMakeFiles/rebuild_cache.dir
