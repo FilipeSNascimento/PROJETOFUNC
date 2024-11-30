@@ -120,7 +120,7 @@ void esqueci_senha() {
 }
 
 int main() {
-    carregar_usuarios(); // Carrega os usuarios ao iniciar o programa
+    carregar_usuarios(); // Carrega os usuarios
 
     char usuario[20], senha[20];
     int continuar = 1;
@@ -176,8 +176,8 @@ int main() {
             printf("Escolha uma opcao: ");
             scanf("%d", &opcao);
 
-            if (opcao == 1) {
-                continue; // Volta para o login
+            if (opcao == 1) {continue;
+                // Volta para o login
             } else if (opcao == 2) {
                 esqueci_senha(); // Chama a função de redefinição de senha
             } else if (opcao == 3) {

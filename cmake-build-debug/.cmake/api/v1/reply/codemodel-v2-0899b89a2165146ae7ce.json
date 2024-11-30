@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ProjetoAnaMaromoa",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ProjetoAnaMaromoa::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProjetoAnaMaromoa-Debug-7565a952588e866064f5.json",
+					"name" : "ProjetoAnaMaromoa",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/gv004/OneDrive/Desktop/Fatec/2\u00baSemestre/Projeto sabado/Projeto Controle de Funcionario/cmake-build-debug",
+		"source" : "C:/Users/gv004/OneDrive/Desktop/Fatec/2\u00baSemestre/Projeto sabado/Projeto Controle de Funcionario"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
