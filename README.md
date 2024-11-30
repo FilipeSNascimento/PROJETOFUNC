@@ -1,4 +1,4 @@
-# PROJETO - REGISTRO E GERENCIAMENTO DE FUNCIONÁRIOS <h2>
+# Guia do Usuário <h2>
 ## **INTRODUÇÃO📖**
 Este projeto foi desenvolvido como parte de um trabalho acadêmico, nas matérias de Linguagem de programação e Engenharia de Software, para demonstrar habilidades de programação em C e compreender os fundamentos da criação de um software. Trata-se de um Sistema de Controle de Funcionários de Empresa, cujo objetivo é facilitar o gerenciamento de funcionários em uma organização. Este projeto ilustra a utilização de estruturas de dados em C, manipulação de arquivos para persistência de dados, e implementação de menus interativos para navegação no sistema. O foco foi criar um programa funcional, eficiente e de fácil utilização.
 
